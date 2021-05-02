@@ -1,0 +1,22 @@
+.offerings-container {
+
+	article + article {
+		margin-top: 30px;
+	}
+
+	h1 {
+		color: #737244;
+		margin-top: -5px;
+
+		span {
+			color: #0a3542;
+		}
+	}
+
+	.call-info {
+		color: #b25538;
+		font-size: 150%;
+		line-height: 150%;
+		margin-top: 25%;
+	}
+}

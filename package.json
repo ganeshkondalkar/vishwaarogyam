@@ -1,0 +1,30 @@
+{
+  "name": "Visha_Aarogyam",
+  "version": "1.0.0",
+  "projectDetails": {
+    "startDate": "March 01st, 2016",
+    "renewalRequiredOn": "Feb 28th, 2022",
+    "endDate": "Feb 28th, 2022"
+  },
+  "author": "ganeshkondalkar@gmail.com",
+  "description": "Vishwa Arogyam Website, (SPA)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "private": true,
+  "license": "ISC",
+  "devDependencies": {
+    "connect-livereload": "^0.5.4",
+    "grunt": "^0.4.5",
+    "grunt-contrib-clean": "^0.7.0",
+    "grunt-contrib-compass": "^1.0.4",
+    "grunt-contrib-concat": "^0.5.1",
+    "grunt-contrib-connect": "^0.10.1",
+    "grunt-contrib-copy": "^0.8.2",
+    "grunt-contrib-htmlmin": "^0.6.0",
+    "grunt-contrib-uglify": "^0.11.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-open": "^0.2.3"
+  }
+}

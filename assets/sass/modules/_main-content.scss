@@ -1,0 +1,16 @@
+/* ---------------------------------------------------------
+ 4. Main Content Component
+-------------------------------------------------------- */
+.banner img {
+	@extend %img;
+}
+
+#mainContent {
+	margin: 80px 0;
+	color: #58595b;
+	font-size: 16px;
+
+	p.content {
+		text-align: justify;
+	}
+}

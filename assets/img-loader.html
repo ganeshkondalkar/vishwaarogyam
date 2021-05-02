@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Image Loader</title>
+	<script type="text/javascript" src="js/lib/jquery/jquery-1.11.3.js"></script>
+</head>
+<body>
+	<div class="container">
+		
+	</div>
+
+	<script>
+		// http://salpaidevi.com/demos/vishwaarogyam/img/home/hero-banner.jpg
+		$(function(){
+			var site = {
+				imgSrcArray: ["http://salpaidevi.com/demos/vishwaarogyam/img/home/hero-banner.jpg", "http://salpaidevi.com/demos/vishwaarogyam/img/about-us/hero-banner.jpg", "http://salpaidevi.com/demos/vishwaarogyam/img/therapy/hero-banner.jpg", "http://salpaidevi.com/demos/vishwaarogyam/img/offerings/hero-banner.jpg", "http://salpaidevi.com/demos/vishwaarogyam/img/contact-us/hero-banner.jpg"],
+				onImgLoad: function(e){
+					setTimeout(function(){
+						$(".container").append(e.path[0]);
+					}, 0);
+					if(e.path[0].src === site.imgSrcArray[site.imgSrcArray.length-1]){
+						site.initSlider();
+					}
+				},
+				loadImage: function(imgSrc){
+					var img = new Image();
+					img.onload = site.onImgLoad;
+					img.src = imgSrc;
+					img.alt = imgSrc;
+				},
+				initSlider: function(){
+					console.log("Slider init!");
+				},
+				loadAllImages: function(imgArr){
+					$.each(imgArr, function(imgIndex, imgSrc){
+						site.loadImage(imgSrc);
+					});
+				}
+			};
+
+			site.loadAllImages(site.imgSrcArray);
+			// site.loadImage();
+		});
+
+	</script>
+</body>
+</html>
