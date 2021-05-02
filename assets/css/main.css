@@ -1,0 +1,299 @@
+/*---------------------------------------------------------
+ 1. Reset & Globals
+-------------------------------------------------------- */
+body {
+  font-family: 'Raleway', sans-serif;
+  font-size: 16px;
+  font-weight: lighter;
+  /*
+  	MAC Font Flikering issue
+  	Thanks to:
+  	http://stackoverflow.com/questions/21278020/font-weight-turns-lighter-on-mac-safari
+  */
+  -webkit-font-smoothing: subpixel-antialiased;
+  font-smoothing: subpixel-antialiased;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: lighter;
+}
+
+.banner img {
+  border: 0;
+  height: auto;
+  width: 100%;
+}
+
+/* ---------------------------------------------------------
+ 2. Header Component
+-------------------------------------------------------- */
+header {
+  position: absolute;
+  top: 0;
+  margin-top: 6%;
+  width: 100%;
+  background: #7e8959;
+}
+header a,
+header a:hover,
+header a:focus {
+  color: #fff;
+}
+
+/* ---------------------------------------------------------
+ 3. Logo & Navigation Component
+-------------------------------------------------------- */
+#logo {
+  position: absolute;
+  margin-top: -6%;
+}
+@media screen and (min-width: 1600px) {
+  #logo {
+    width: 20%;
+  }
+}
+#logo + .title {
+  color: #fff;
+  display: inline-block;
+  font-size: 140%;
+  letter-spacing: 6px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding-left: 40px;
+}
+@media screen and (min-width: 1600px) {
+  #logo + .title {
+    margin-left: 27%;
+  }
+}
+
+#menubar {
+  font-size: 140%;
+  letter-spacing: 2px;
+}
+#menubar a:hover,
+#menubar a:focus {
+  text-decoration: none;
+  background: none;
+}
+#menubar .menubar .icon-bar {
+  display: block;
+  margin-top: 2px;
+  width: 15px;
+  height: 3px;
+  background-color: #f5f5f5;
+  -webkit-border-radius: 1px;
+  -moz-border-radius: 1px;
+  border-radius: 1px;
+  -webkit-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.25);
+}
+#menubar .menubar .iCon {
+  display: inline-block;
+}
+#menubar .dropdown-menu {
+  background: rgba(255, 255, 255, 0.6);
+  border-radius: 0;
+  box-shadow: none;
+}
+#menubar .dropdown-menu li {
+  border-bottom: 1px solid #909090;
+  padding: 10px 0;
+}
+#menubar .dropdown-menu li:last-child {
+  border: 0 none;
+}
+#menubar .dropdown-menu > .active > a,
+#menubar .dropdown-menu > .active > a:focus,
+#menubar .dropdown-menu > .active > a:hover {
+  color: #467846;
+  background: none;
+}
+
+/* ---------------------------------------------------------
+ 4. Hero Banner Component
+-------------------------------------------------------- */
+#heroBanner img, .home .offerings-slides img {
+  width: 100%;
+}
+
+/* ---------------------------------------------------------
+ 4. Main Content Component
+-------------------------------------------------------- */
+#mainContent {
+  margin: 80px 0;
+  color: #58595b;
+  font-size: 16px;
+}
+#mainContent p.content {
+  text-align: justify;
+}
+
+#heroBanner, .home .offerings-slides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  z-index: 0;
+}
+#heroBanner .item, .home .offerings-slides .item {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+}
+#heroBanner .item:first-child, .home .offerings-slides .item:first-child {
+  position: relative;
+  display: block;
+  float: left;
+}
+#heroBanner img, .home .offerings-slides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+}
+
+.home #mainContent .blue {
+  color: #507282;
+}
+.home #mainContent .yellow {
+  color: #b07e09;
+}
+.home #mainContent .green {
+  color: #7e8959;
+}
+.home #mainContent .big-title {
+  font-size: 60px;
+  line-height: 32px;
+  margin-bottom: 30px;
+}
+.home #mainContent .big-title span {
+  font-size: 30px;
+}
+.home #mainContent .box-02 h1 {
+  color: #71535c;
+  font-size: 275%;
+  line-height: 60px;
+  margin-top: -15px;
+}
+.home #mainContent .box-02 p {
+  line-height: 30px;
+  margin-top: 20px;
+}
+.home #mainContent .box-02 .yellow-btn {
+  font-size: 27px;
+  background: #fdb933;
+  padding: 10px 20px;
+  margin: 50px 0;
+  display: inline-block;
+}
+.home #mainContent .box-02 .call-info {
+  color: #b25538;
+  font-size: 150%;
+  line-height: 150%;
+}
+
+.about-us-container h1 {
+  color: #71535c;
+}
+.about-us-container blockquote {
+  border: none;
+}
+.about-us-container blockquote h1 {
+  font-family: "Raleway";
+  color: #aa7455;
+  font-size: 200%;
+  letter-spacing: 5px;
+}
+.about-us-container .cert {
+  margin-top: 10px;
+}
+
+.therapy-container .therapy {
+  border-bottom: 1px dashed;
+  margin-bottom: 25px;
+  padding-bottom: 15px;
+}
+.therapy-container article + article {
+  margin-top: 100px;
+}
+.therapy-container h1 {
+  color: #71535c;
+  margin-top: -5px;
+}
+.therapy-container h3, .therapy-container h4 {
+  font-family: "Raleway";
+  font-size: 18px;
+  font-weight: 600;
+}
+.therapy-container h4 {
+  font-size: 16px;
+}
+.therapy-container .call-info {
+  color: #b25538;
+  font-size: 150%;
+  line-height: 150%;
+  margin-top: 25%;
+}
+
+.offerings-container article + article {
+  margin-top: 30px;
+}
+.offerings-container h1 {
+  color: #737244;
+  margin-top: -5px;
+}
+.offerings-container h1 span {
+  color: #0a3542;
+}
+.offerings-container .call-info {
+  color: #b25538;
+  font-size: 150%;
+  line-height: 150%;
+  margin-top: 25%;
+}
+
+.contact-us-container h4 {
+  font-family: "Raleway";
+  font-weight: bold;
+}
+.contact-us-container .call-info {
+  color: #b25538;
+  font-size: 150%;
+  line-height: 150%;
+  margin-top: 25%;
+}
+.contact-us-container #enquiryForm .error {
+  display: none;
+}
+.contact-us-container .btn-submit {
+  margin-right: 15px;
+}
+
+.info_content {
+  color: #58595b;
+}
+
+footer {
+  border-top: 1px dashed;
+  font-size: 80%;
+  margin-top: 10px;
+  padding: 10px 0 0;
+}
+
+#social-links {
+  position: fixed;
+  right: 20px;
+  top: 45%;
+}
+#social-links .twitter,
+#social-links .fb {
+  padding: 5px;
+}

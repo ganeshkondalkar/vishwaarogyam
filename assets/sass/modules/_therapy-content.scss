@@ -1,0 +1,36 @@
+.therapy-container {
+
+	.therapy {
+		border-bottom: 1px dashed;
+		margin-bottom: 25px;
+		padding-bottom: 15px;
+	}
+
+
+	article + article {
+		margin-top: 100px;
+	}
+
+	h1 {
+		color: #71535c;
+		margin-top: -5px;
+	}
+
+	h3, h4 {
+		font-family: "Raleway";
+    	font-size: 18px;
+    	font-weight: 600;
+	}
+
+	h4 {
+    	font-size: 16px;
+	}
+
+	.call-info {
+		color: #b25538;
+		font-size: 150%;
+		line-height: 150%;
+		margin-top: 25%;
+	}
+}
+

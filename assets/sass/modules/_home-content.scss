@@ -1,0 +1,52 @@
+.home {
+
+	#mainContent {
+		.blue { color: #507282; }
+		.yellow { color: #b07e09; }
+		.green { color: #7e8959; }
+
+		.big-title {
+			font-size: 60px;
+			line-height: 32px;
+			margin-bottom: 30px;
+
+			span {
+				font-size: 30px;
+			}
+		}
+
+		.box-02 {
+			h1 {
+				color: #71535c;
+				font-size: 275%;
+				line-height: 60px;
+				margin-top: -15px;
+			}
+
+			p {
+				line-height: 30px;
+				margin-top: 20px;
+			}
+
+			.yellow-btn {
+				font-size: 27px;
+				background: #fdb933;
+				padding: 10px 20px;
+				margin: 50px 0;
+				display: inline-block; 
+			}
+
+			.call-info {
+				color: #b25538;
+    			font-size: 150%;
+    			line-height: 150%;
+			}
+
+		}
+
+	}
+
+	.offerings-slides {
+		@extend #heroBanner;
+	}
+}

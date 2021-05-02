@@ -1,0 +1,23 @@
+.contact-us-container {
+	h4 {
+		font-family: "Raleway";
+		font-weight: bold;
+	}
+
+	.call-info {
+		color: #b25538;
+		font-size: 150%;
+		line-height: 150%;
+		margin-top: 25%;
+	}
+
+	#enquiryForm {
+		.error {
+			display: none;
+		}
+	}
+
+	.btn-submit {
+		margin-right: 15px;
+	}
+}
